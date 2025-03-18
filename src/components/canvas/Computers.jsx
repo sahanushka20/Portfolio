@@ -15,7 +15,7 @@ const Computers = ({ isMobile }) => {
         angle={0.12}
         penumbra={1}
         intensity={1}
-        // castShadow
+        
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
@@ -34,7 +34,7 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     
-    const mediaQuery = window.matchMedia("(max-width: 575px)");
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
 
     
     setIsMobile(mediaQuery.matches);
